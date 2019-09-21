@@ -366,14 +366,11 @@ template {
 	box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.15);
 }
 
-.header_menu_item {
-	
-}
-
 .container {
 	width: 100%;
 	max-width: 1140px;
 	margin: 0 auto;
+	padding: 0 5px;
 }
 
 .header_inner {
@@ -397,21 +394,118 @@ template {
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	font-weight: 700;
-	margin: 0 10px;
+	margin: 0 25px;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+	position: relative;
+}
+
+.header_menu__link.active {
+	color: #000;
+}
+
+.header_menu__link:hover {
+	color: #000;
+}
+
+.header_menu__link.active:before {
+	content: '';
+	width: 20px;
+	height: 1px;
+	background-color: #000;
+	display:block;
+	position: absolute;
+	left: -34px;
+	top: 6px;
+}
+
+.header_menu {
+	/*margin-left: 38%;*/
+	position: relative;
+/*	right: -200px*/
 }
 
 .search {
 	display: inline-block;
+	position:relative;
 }
 
 
 .search_img {
 	cursor: pointer;
 	display: block;
-	width: 20px;
-	height: 20px;
+	width: 13px;
+	height: 13px;
+	vertical-align: bottom;
+	position: absolute;
+	right: 0;
+	top: 7px;
+	right: 9px;
+	z-index: 1;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
 }
 
 .search_btn {
-	display: none;
+	display: block;
+	background: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	padding: 0;
+	position: absolute;
+	z-index: 2;
+	outline: none;
+	border: none;
+	width: 22px;
+	height: 22px;
+	right: 10px;
+	bottom: 4px;
+}
+
+.btn_search_img {
+	width: 13px;
+	height: 13px;
+	vertical-align: bottom;
+	cursor: pointer;
+	position: absolute;
+	right: -1px;
+	bottom: 8px;
+}
+
+.search_input {
+	width: 0px; /*170*/
+	padding: 5px 45px 5px 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow:inset 0 0 1px 1px rgba(0, 0, 0, 0.15);
+	box-shadow:inset 0 0 1px 1px rgba(0, 0, 0, 0.15);
+	border: none;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	outline: none;
+	border-radius: 22px;
+	background-color: #fff;
+	z-index: 2;
+	margin-bottom: 6px;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.serch_input_container {
+	display: inline-block;
+	position: relative;
+	opacity: 0;
+}
+
+.nav_container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	width: 100%;
 }

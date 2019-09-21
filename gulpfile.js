@@ -47,7 +47,8 @@ function watch() {
 	browserSync.init({
         server: {
             baseDir: "./"
-        }
+        },
+
     });
     gulp.watch('./src/css/**/*.css', styles);
     gulp.watch('./src/js/**/*.js', scripts);

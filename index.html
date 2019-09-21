@@ -15,25 +15,27 @@
 					<a href="#"><img src="build/img/logo.png" alt="site logo"></a>
 				</span>
 
-				<nav class="header_menu">
-					<a class="header_menu__link" href="#">home</a>
-					<a class="header_menu__link" href="#">about</a>
-					<a class="header_menu__link" href="#">portfolio</a>
-					<a class="header_menu__link" href="#">blog</a>
-					<a class="header_menu__link" href="#">contact</a>
-				</nav>
+				<div class="nav_container">
+					<nav class="header_menu">
+						<a class="header_menu__link active" href="#">home</a>
+						<a class="header_menu__link" href="#">about</a>
+						<a class="header_menu__link" href="#">portfolio</a>
+						<a class="header_menu__link" href="#">blog</a>
+						<a class="header_menu__link" href="#">contact</a>
+					</nav>
+				</div>
 
-				<div class="search">
+				<div id="search_form" class="search">
 					<form action="#">
-						<svg class="search_img">
-							<use xlink:href="build/icons/search.svg#Capa_1" />
-						</svg>
-						<input type="text" name="search" placeholder="search">
-						<button class="search_btn" type="submit">
-							<svg>
-							<use xlink:href="build/icons/search.svg#Capa_1" />
-						</svg>
-						</button>
+						<div class="serch_input_container">
+
+							<input class="search_input" type="text" name="search" placeholder="search">
+							<button class="search_btn" type="submit">
+								<img class="btn_search_img" src="build/img/magnifier-tool.png" alt="">
+							</button>							
+						</div>
+						<img id="search_img" class="search_img" src="build/img/magnifier-tool.png" alt="">
+						
 					</form>
 				</div>
 			</div>
