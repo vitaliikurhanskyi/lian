@@ -2,7 +2,7 @@ $( document ).ready(function() {
     console.log( "ready!" );
 
 
-    /*search form button*/
+    /* search form button */
 
     $('#search_img').click(function(event) {
     	$(this).css({
@@ -30,5 +30,27 @@ $( document ).ready(function() {
 	    	});
     	}
     });
+
+    /* end search form button */
+
+    /* activ mobile menu link */
+
+    $(window).on('resize, load', function(){
+      	if ($(window).width() < 1024) {
+    		console.log('asdf');
+    	}
+	});
+
+	/* mobile button */
+
+
+	$("#sandwich, .menu_item").click(function() {
+  		$("#sandwich").toggleClass("active");
+  		$(".nav_container").toggleClass("open");
+	});
+
+
+
+    
 
 });

@@ -1,0 +1,118 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (max-width: 1024px) {
+ 
+  .nav_container {
+    position: absolute;
+    display: block;
+    transition: 1s;
+  }
+
+  .nav_container {
+    width: 100%;
+    position: absolute;
+    left: 5px;
+    right: 10px;
+    margin: 0 auto;
+    width: 99%;
+    top: -300px;
+    z-index: 3;
+  }
+
+  .header_menu {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    background-color: #fff;
+  }
+
+  .header_menu__link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+    box-shadow: 0px 0.2px 1.75px 0.25px rgba(0, 0, 0, 0.15);
+  }
+
+
+  .header_menu__link.active:before {
+    content: '';
+    display: none;
+  }
+
+  .search {
+    margin-right: 120px;
+  }
+
+  .mobile_menu_button {
+    display: block;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .logo_img {
+      width: 70%;
+    }
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .logo_img {
+      width: 60%;
+    }
+  
+}

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lian</title>
 	<link rel="stylesheet" href="build/css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
 		<div class="container">
 			<div class="header_inner">
 				<span class="header_logo">
-					<a href="#"><img src="build/img/logo.png" alt="site logo"></a>
+					<a href="#"><img class="logo_img" src="build/img/logo.png" alt="site logo"></a>
 				</span>
 
 				<div class="nav_container">
@@ -28,15 +29,21 @@
 				<div id="search_form" class="search">
 					<form action="#">
 						<div class="serch_input_container">
-
 							<input class="search_input" type="text" name="search" placeholder="search">
 							<button class="search_btn" type="submit">
 								<img class="btn_search_img" src="build/img/magnifier-tool.png" alt="">
 							</button>							
 						</div>
 						<img id="search_img" class="search_img" src="build/img/magnifier-tool.png" alt="">
-						
 					</form>
+				</div>
+
+				<div class="mobile_menu_button">
+					<span id="sandwich">
+						<span class="sw-topper"></span>
+						<span class="sw-bottom"></span>
+						<span class="sw-footer"></span>
+					</span>
 				</div>
 			</div>
 		</div>

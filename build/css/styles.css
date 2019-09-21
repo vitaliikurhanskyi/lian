@@ -370,7 +370,7 @@ template {
 	width: 100%;
 	max-width: 1140px;
 	margin: 0 auto;
-	padding: 0 5px;
+	padding: 0 10px;
 }
 
 .header_inner {
@@ -508,4 +508,246 @@ template {
 	-ms-flex-pack: end;
 	justify-content: flex-end;
 	width: 100%;
+}
+
+/* mobele button */
+
+.mobile_menu_button {
+	display: none;
+	position: absolute;
+	right: 10px;
+	width: 50px;
+	height: 50px;
+	z-index: 5;
+	background-color: rgba(255, 255, 255, 0.15);
+	cursor: pointer;
+}
+
+.nav_container.open {
+	top: 16px;
+}
+
+#sandwich {
+	padding-left: 5px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+} 
+  
+.sw-topper {
+	position: absolute;
+	display: inline-block;
+	top: 5px;
+	width: 40px; 
+	height: 5px;
+	background-color: #000;
+	border: none;
+	border-radius: 4px 4px 4px 4px;
+	-webkit-transition: top 0.2s, -webkit-transform 0.5s;
+	transition: top 0.2s, -webkit-transform 0.5s;
+	transition: transform 0.5s, top 0.2s;
+	transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;	    
+	/* transition-delay: 0.2s, 0s; */
+}
+    
+
+
+
+.sw-bottom {
+	position: absolute;	
+    width: 40px; 
+	height: 5px;
+    top: 20px;   
+    background: #000;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+    transition: top 0.2s, -webkit-transform 0.5s;
+    transition: transform 0.5s, top 0.2s;
+    transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+    -webkit-transition-delay: 0.2s, 0s;
+    transition-delay: 0.2s, 0s; 
+}
+    
+
+.sw-footer {
+
+	position: absolute;
+    width: 40px; 
+	height: 5px;
+    top: 35px;
+    background: #000;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s; 
+}
+    
+
+ 
+#sandwich.active .sw-topper {
+	background-color: #777;
+	top: 20px;
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg);
+}
+    
+#sandwich.active .sw-bottom {
+	background-color: #777;
+	top: 20px;
+    -webkit-transform: rotate(-140deg);
+    transform: rotate(-140deg);
+}
+    
+#sandwich.active .sw-footer {
+	opacity: 0;
+    top: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+    
+
+/* end mobele button */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (max-width: 1024px) {
+ 
+  .nav_container {
+    position: absolute;
+    display: block;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+
+  .nav_container {
+    width: 100%;
+    position: absolute;
+    left: 5px;
+    right: 10px;
+    margin: 0 auto;
+    width: 99%;
+    top: -300px;
+    z-index: 3;
+  }
+
+  .header_menu {
+    position: absolute;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    background-color: #fff;
+  }
+
+  .header_menu__link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+    -webkit-box-shadow: 0px 0.2px 1.75px 0.25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0.2px 1.75px 0.25px rgba(0, 0, 0, 0.15);
+  }
+
+
+  .header_menu__link.active:before {
+    content: '';
+    display: none;
+  }
+
+  .search {
+    margin-right: 120px;
+  }
+
+  .mobile_menu_button {
+    display: block;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .logo_img {
+      width: 70%;
+    }
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .logo_img {
+      width: 60%;
+    }
+  
 }
