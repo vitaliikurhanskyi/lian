@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lian</title>
-	<link rel="stylesheet" href="build/css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="build/lib/slick/slick.css">
+	<link rel="stylesheet" href="build/lib/slick/slick-theme.css">
+	<link rel="stylesheet" href="build/css/styles.css">
 </head>
 <body>
 	
@@ -49,6 +51,23 @@
 		</div>
 	</div>
 
-	<script src="build/js/script.js"></script>
+	
+	<div class="slider_wrapper">
+		<div id="slider" class="slider">
+			<div class="slider__slide" style="background-image: url('build/img/slide1.jpg'); ">
+				<div class="main_text">Lian Creative Agency</div>
+				<div class="text_bottom">Minimal Freelance Portfolio</div>
+			</div>
+			<div class="slider__slide" style="background-image: url('build/img/slide-2.jpg'); ">
+				<div class="main_text">Design & Branding</div>
+				<div class="text_bottom">We Deliver Quality Results</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="build/js/jquery-3.4.1.js"></script>
+	<script src="build/lib/slick/slick.js"></script>
+	<script src="build/js/main.js"></script>
 </body>
 </html>

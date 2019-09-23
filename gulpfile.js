@@ -34,7 +34,7 @@ function styles() {
 function scripts() {
 	return gulp.src(jsFiles)
 	.pipe(concat('script.js'))
-	// .pipe(uglify())
+	.pipe(uglify())
 	.pipe(gulp.dest('./build/js'))
 	.pipe(browserSync.stream());
 }

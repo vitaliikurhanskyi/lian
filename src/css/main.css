@@ -5,6 +5,8 @@
 	width: 100%;
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.15);
+	position: relative;
+	z-index: 20;
 }
 
 .container {
@@ -231,3 +233,26 @@
     
 
 /* end mobele button */
+
+
+/* slider */
+
+/*.slider_wrapper {
+	position: relative;
+}*/
+
+.slider {
+	width: 100%;
+	overflow: hidden;
+}
+
+.slider__slide {
+	overflow: hidden;
+	background-position: center;
+	height: 650px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* end slider */
