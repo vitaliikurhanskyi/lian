@@ -1,3 +1,10 @@
+.test {
+	height: 300px;
+}
+body {
+	background-color: #fafafa;
+}
+
 .header {
 	display: flex;
 	align-items: center;
@@ -237,22 +244,122 @@
 
 /* slider */
 
-/*.slider_wrapper {
-	position: relative;
-}*/
-
 .slider {
 	width: 100%;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .slider__slide {
 	overflow: hidden;
-	background-position: center;
 	height: 650px;
 	width: 100%;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto;
+	position: relative;
+}
+
+.slider_text_wrap {
+	padding: 20px 0;
+	position: absolute;
+	top: 37%;
+	left: 0;
+	right: 0;
+	display: block;
+	width: 55%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.slider_main_text {
+	font-size: 48px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.slider_main_text_background {
+	display: inline-block;
+	padding: 0 6%;
+	background-color: #000;
+	letter-spacing: 5px;
+}
+
+.slider_text_bottom {
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	margin-top: 37px;
+}
+
+.slick-dots {
+	display: inline-block;
+	position: absolute;
+	bottom: 9%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.slick-dots li button:before {
+	content: '';
+	font-size: 16px;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-color: #fff;
+	opacity: 1;	
+	border-radius: 50%;	
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    border: 4px solid #000;
+    width: 7px;
+	height: 7px;
 }
 
 /* end slider */
+
+/* sort navigation */
+
+.sort_navigation {
+	height: 60px;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sort_navigation_link {
+	text-transform: uppercase;
+	color: #777777;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0 25px;
+	position: relative;
+}
+
+.sort_navigation_link::after {
+	content: '';
+	background-color: #777777;
+	width: 1px;
+	height: 29px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: -7px;
+	opacity: .3;
+	transform: rotate(20deg);
+}
+
+
+/* sort navigation */

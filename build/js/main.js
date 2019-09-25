@@ -58,10 +58,5 @@ $( document ).ready(function() {
         slidesToShow: 1,
         adaptiveHeight: true
 	});
-
-
-
-
     
-
 });
